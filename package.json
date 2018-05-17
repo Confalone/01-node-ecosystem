@@ -1,0 +1,23 @@
+{
+  "name": "01-node-ecosystem",
+  "version": "1.0.0",
+  "description": "npm node",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Confalone/01-node-ecosystem.git"
+  },
+  "author": "Tyler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Confalone/01-node-ecosystem/issues"
+  },
+  "homepage": "https://github.com/Confalone/01-node-ecosystem#readme"
+}
