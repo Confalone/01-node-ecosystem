@@ -5,9 +5,12 @@ describe ('greet module', () => {
 
         expect{greet()}.toBeNull();
     })
-    if('should return "hello ryo" when passed ryo',()=>{
-        let expected = 'hello ryo';
-        let actual = '';
 
+    it('should return "hello ryo" when passed ryo',()=>{
+        let expected = 'hello ryo';
+
+        let actual = greet ('ryo');
+
+        expect(actual).toBe(expected);
     })
 })
