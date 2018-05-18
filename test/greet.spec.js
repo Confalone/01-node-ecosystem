@@ -1,16 +1,16 @@
-const greet = require(../lib/greet.js) 
+const greet = require('../lib/greet.js'); 
 describe ('greet module', () => {
   
-    it ('should return null when passed non string'), () => {
+  it ('should return null when passed non string', () => {
 
-        expect{greet()}.toBeNull();
-    })
+    expect(greet()).toBeNull();
+  });
 
-    it('should return "hello ryo" when passed ryo',()=>{
-        let expected = 'hello ryo';
+  it('should return "hello ryo" when passed ryo',()=>{
+    let expected = 'hello ryo';
 
-        let actual = greet ('ryo');
+    let actual = greet ('ryo');
 
-        expect(actual).toBe(expected);
-    })
-})
+    expect(actual).toBe(expected);
+  });
+});
