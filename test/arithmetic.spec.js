@@ -3,17 +3,24 @@
 const arithmetic = require('../lib/arithmetic.js'); 
 describe ('arithmetic module', () => {
   
-  it ('should return null when passed non string', () => {
+  it ('should return null when passed non number', () => {
 
-    expect(greet()).toBeNull();
+    expect(arithmetic.add('test','result')).toBeNull();
   });
 
-  it('should return "hello ryo" when passed ryo',()=>{
-    let expected = 'hello ryo';
+  it ('should return sum of 2 numbers when passed 2 numbers', () => {
 
-    let actual = greet ('ryo');
+    expect(arithmetic.add(1,2)).toEqual(3);
+  });
 
-    expect(actual).toBe(expected);
+  it ('should return null when passed non number', () => {
+
+    expect(arithmetic.sub('test','result')).toBeNull();
+  });
+
+  it ('should return dif btw 2 numbers when passed 2 numbers', () => {
+
+    expect(arithmetic.sub(2,1)).toEqual(1);
   });
 });
 //]This module exports an object and should have add and sub methods that implement addition and subtraction.
